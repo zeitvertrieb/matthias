@@ -1,0 +1,67 @@
+.hero {
+  display: block;
+
+}
+
+.heroPerson {
+  display: block;
+}
+
+@media(min-width: 600px) {
+  .heroPerson {
+    display: flex;
+    align-items: center;
+  }
+}
+
+
+.heroUser {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 4px solid var(--bg);
+  box-shadow: 0 0 0 3px transparent;
+  transition: box-shadow .2s cubic-bezier(.4,0,.2,1);
+  overflow: hidden;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+a:focus > .heroUser,
+a:hover > .heroUser,
+a:active > .heroUser {
+  box-shadow: 0 0 0 3px var(--link-color);
+}
+
+@media(min-width: 600px) {
+  .heroUser {
+    height: 100px;
+    width: 100px;
+    margin-top: 4rem;
+  }
+}
+
+.heroImage {
+  max-height: 40vh;
+  margin-bottom: 2rem;
+}
+
+.heroDetails {
+  margin-top: 2em;
+}
+
+@media(min-width: 600px) {
+  .heroDetails {
+    font-size: 1.25rem;
+    /* column-count: 2;
+    column-gap: 5vmin; */
+  }
+}
+
+.heroHeadline {
+  margin: 0;
+}
+
+.heroTitle {
+  font-size: 1.25em;
+  margin: 1rem 0;
+}

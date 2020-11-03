@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "ny";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/ny.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "sf";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/sf.woff2") format("woff2");
+  font-display: swap;
+}
+
+:root {
+  --color-white: #ffffff;
+  --color-dark: #0f171e;
+  --text-color: #373F49;
+  --link-color: #4479ff;
+  --bg: #ffffff;
+  --backdropBg: 255,255,255;
+  --hr: #eeeeee;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: "sf", sans-serif;
+  font-size: 1.125em;
+  line-height: 1.47059;;
+  letter-spacing: -.022em;
+  color: var(--text-color);
+  background-color: var(--bg);
+  margin: 0;
+}
+
+body.dark {
+  --text-color: rgba(255, 255, 255, 0.88);
+  --link-color: #7aa0ff;
+  --bg: var(--color-dark);
+  --backdropBg: 0,0,0;
+  --hr: #333333;
+}
+
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "ny", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 2em;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1;
+  padding-top: 5rem;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+time {
+  font-size: small;
+}
+
+.wrapper {
+  width: calc(100% - 10vmin);
+  margin: 0 auto;
+  padding: 5vmin 0;
+}
+
+/**
+ * article grid
+ */
+.article-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-gap: 5vmin;
+}
+
+/* .article-list {
+  grid-template-columns: repeat(auto-fit, calc(50% - 1.3333rem * 2));
+} */
+
+/**
+ *
+ */
+.section-headline {
+  padding: 0 0 0.4em 0;
+  margin: 0 0 5vmin 0;
+  border-bottom: 1px solid var(--hr);
+}
+
+/**
+ *
+ */
+.list-inline {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list-inline li {
+  display: inline-block;
+}
+
+/**
+ * screen reader
+ */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/**
+ * animations
+ */
+@keyframes fadeIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}

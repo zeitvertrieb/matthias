@@ -1,0 +1,46 @@
+.switch {
+  display: inline-block;
+  background-color: var(--bg);
+  border: 2px solid transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  padding: .85rem;
+  position: fixed;
+  right: calc(5vmin + 4rem);
+  top: 5vmin;
+  z-index: 4;
+  cursor: pointer;
+  outline: none;
+  transition: border .2s cubic-bezier(.4,0,.2,1);
+}
+
+.switch:focus,
+.switch:hover,
+.switch:active {
+  border-color: var(--link-color);
+}
+
+.switch ion-icon {
+  width: 24px;
+  height: 24px;
+  margin: 0;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+input:checked + .slider {
+  background-color: var(--bg);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--bg);
+}
+
+input:checked + .slider:before {
+  /* transform: scale(0.6); */
+}

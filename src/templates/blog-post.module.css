@@ -1,0 +1,47 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12.5em;
+  margin: -1em -2.5em 1em;
+  font-size: 2em
+}
+
+article {
+  font-size: 1.25em;
+}
+
+@media(min-width: 600px) {
+  article {
+  }
+}
+
+.articleTitle {
+  margin-top: 0;
+}
+
+@media(min-width: 600px) {
+  .articleTitle {
+    font-size: 4em;
+    line-height: 1;
+  }
+}
+
+.navigation {
+  padding: 0 0 2em 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigationLink {
+  display: flex;
+  flex-direction: column;
+}
+
+.navigationLink a {
+  font-family: "ny", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.navigationTitle {
+  font-size: small;
+}
