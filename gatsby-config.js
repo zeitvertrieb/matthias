@@ -32,7 +32,6 @@ module.exports = {
   },
   pathPrefix: `/matthias`,
   plugins: [
-    `gatsby-plugin-dark-mode`,
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,

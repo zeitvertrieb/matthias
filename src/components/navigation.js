@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { useStaticQuery, graphql, Link } from 'gatsby'
+import { ThemeProvider } from './themeContext'
 import ThemeToggle from './themeToggle'
+
 import styles from './navigation.module.css'
 
 const Navigation = () => {
@@ -20,6 +22,7 @@ const Navigation = () => {
 
   return (
     <>
+      <ThemeToggle />
       <button
         id="navToggle"
         tabIndex="2"

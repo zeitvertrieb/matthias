@@ -1,6 +1,6 @@
 .switch {
   display: inline-block;
-  background-color: var(--bg);
+  background-color: var(--color-background);
   border: 2px solid transparent;
   border-radius: 50%;
   display: flex;
@@ -18,7 +18,7 @@
 .switch:focus,
 .switch:hover,
 .switch:active {
-  border-color: var(--link-color);
+  border-color: var(--color-action);
 }
 
 .switch ion-icon {
@@ -34,11 +34,11 @@
 }
 
 input:checked + .slider {
-  background-color: var(--bg);
+  background-color: var(--color-background);
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px var(--bg);
+  box-shadow: 0 0 1px var(--color-background);
 }
 
 input:checked + .slider:before {
