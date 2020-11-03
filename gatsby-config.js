@@ -30,7 +30,7 @@ module.exports = {
     description: `Design and User Experience`,
     author: `@zeitvertrieb`,
   },
-  pathPrefix: `/matthias`,
+  pathPrefix: `/mg`,
   plugins: [
     `gatsby-plugin-dark-mode`,
     `gatsby-transformer-remark`,
