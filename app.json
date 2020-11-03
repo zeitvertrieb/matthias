@@ -1,6 +1,6 @@
 {
-  "name": "Matthias",
-  "description": "Personal website and resume of Matthias Grieder",
+  "name": "Matthias Grieder",
+  "description": "Matthias Grieder personal website",
   "keywords": [
     "resume",
     "blog",
@@ -9,7 +9,7 @@
     "static",
     "ssg"
   ],
-  "repository": "https://github.com/contentful-userland/gatsby-contentful-starter",
+  "repository": "https://github.com/zeitvertrieb/matthias.grieder/",
   "success_url": "/",
   "buildpacks": [
     {

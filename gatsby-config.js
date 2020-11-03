@@ -25,32 +25,32 @@ if (!spaceId || !accessToken) {
 
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://matthias.grieder.info',
-    title: 'Matthias Grieder, Designer',
-    description: 'Design and User Experience',
-    author: '@zeitvertrieb',
+    siteUrl: `https://matthias.grieder.info`,
+    title: `Matthias Grieder, Designer`,
+    description: `Design and User Experience`,
+    author: `@zeitvertrieb`,
   },
-  pathPrefix: '/matthias',
+  pathPrefix: `/matthias`,
   plugins: [
-    'gatsby-plugin-dark-mode',
-    'gatsby-transformer-remark',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sharp',
+    `gatsby-plugin-dark-mode`,
+    `gatsby-transformer-remark`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sharp`,
     {
-      resolve: 'gatsby-source-contentful',
+      resolve: `gatsby-source-contentful`,
       options: contentfulConfig,
     },
     {
-      resolve: 'gatsby-plugin-manifest',
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Matthias Grieder, Designer',
-        short_name: 'Design',
-        start_url: '/',
-        background_color: '#ffffff',
-        theme_color: '#373F49',
-        display: 'minimal-ui',
-        icon: 'static/apple-touch-icon.png',
+        name: `Matthias Grieder, Designer`,
+        short_name: `Design`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#373F49`,
+        display: `minimal-ui`,
+        icon: `static/apple-touch-icon.png`,
       }
     }
   ]
