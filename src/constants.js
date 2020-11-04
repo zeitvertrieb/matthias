@@ -8,7 +8,7 @@ export const COLORS = {
     dark: '#0f171e', // navy navy blue
   },
   action: {
-    light: '#4479ff', // Pinkish-red
+    light: '#144ee0', // Pinkish-red
     dark: '#7aa0ff', // Yellow
   },
   backdrop: {

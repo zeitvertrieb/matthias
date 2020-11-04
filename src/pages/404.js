@@ -9,7 +9,10 @@ import stylesHero from '../components/hero.module.css'
 const ErrorIndex = () => {
   return (
     <Layout>
-      <Helmet title="Page not found." />
+      <Helmet title="Page not found.">
+        <html lang="en" />
+        <meta name="description" content="Sorry, for Your inconvenience." />
+      </Helmet>
       <div className="wrapper">
         <header className={stylesHero.hero}>
           <div className={stylesHero.heroPerson}>

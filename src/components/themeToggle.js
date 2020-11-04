@@ -10,8 +10,9 @@ const ThemeToggle = () => {
   }
 
   return (
-    <label id="themeToggle" tabIndex="3" className={styles.switch}>
+    <label className={styles.switch}>
       <input
+        id="dark"
         type="checkbox"
         className="sr-only"
         checked={colorMode === 'dark'}
@@ -19,7 +20,7 @@ const ThemeToggle = () => {
           setColorMode(ev.target.checked ? 'dark' : 'light');
         }}
       />{' '}
-      <ion-icon size="large" name="contrast"></ion-icon>
+      <ion-icon size="large" name="contrast" />
       <span className="sr-only">Dark Theme</span>
     </label>
   );

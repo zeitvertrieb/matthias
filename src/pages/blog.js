@@ -13,7 +13,10 @@ const BlogIndex = ({ data }) => {
 
   return (
     <Layout>
-      <Helmet title={`Commentary – ` + siteTitle} />
+      <Helmet title={`Commentary – ` + siteTitle}>
+        <html lang="en" />
+        <meta name="description" content="Commentary on design topics by Matthias." />
+      </Helmet>
       <div className="wrapper">
         <h1 style={{ margin: 0 }}>Commentary</h1>
         <h2 className={stylesHero.heroTitle}>

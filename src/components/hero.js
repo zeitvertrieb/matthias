@@ -9,7 +9,6 @@ export default ({ data }) => (
     <div className={styles.heroPerson}>
       <Link
         to="/"
-        tabIndex="3"
         style={{ display: 'flex', marginRight: '5vmin', outline: 'none' }}
       >
         <Img

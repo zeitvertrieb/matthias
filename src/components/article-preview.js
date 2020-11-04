@@ -13,6 +13,7 @@ export default ({ article }) => {
           className={styles.previewImage}
         >
           <Img alt="" fluid={article.heroImage.fluid} />
+          <span className="sr-only">Go to read: {article.title}</span>
         </Link>
         <div>
           <h3 className={styles.previewTitle}>

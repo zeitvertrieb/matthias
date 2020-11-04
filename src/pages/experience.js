@@ -15,7 +15,10 @@ const ExperienceIndex = ({ data }) => {
 
   return (
     <Layout>
-      <Helmet title={`Experience – ` + siteTitle} />
+      <Helmet title={`Experience – ` + siteTitle}>
+        <html lang="en" />
+        <meta name="description" content="Personal resume and experiences of Matthias." />
+      </Helmet>
       <div className="wrapper">
         <Hero data={author.node} />
       </div>

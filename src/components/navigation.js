@@ -22,10 +22,8 @@ const Navigation = () => {
 
   return (
     <>
-      <ThemeToggle />
       <button
         id="navToggle"
-        tabIndex="2"
         type="button"
         className={styles.navigationButton}
         data-active={isShown ? 'true' : 'false'}
@@ -87,7 +85,12 @@ const Navigation = () => {
               </a>
             </li>
             <li className={styles.navigationItem}>
-              <a href={data.contentfulPerson.linkedin} target="_blank">
+              <a
+                href={data.contentfulPerson.linkedin}
+                target="_blank"
+                rel="noopener"
+                rel="noreferrer"
+              >
                 <ion-icon
                   size="large"
                   name="logo-linkedin"

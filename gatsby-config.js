@@ -27,7 +27,7 @@ module.exports = {
   siteMetadata: {
     siteUrl: `https://matthias.grieder.info`,
     title: `Matthias Grieder, Designer`,
-    description: `Design and User Experience`,
+    description: `I aim to create best user experience for all my clients and projects.`,
     author: `@zeitvertrieb`,
   },
   pathPrefix: `/matthias`,

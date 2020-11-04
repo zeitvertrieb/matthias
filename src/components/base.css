@@ -13,16 +13,6 @@
   font-display: swap;
 }
 
-:root {
-  --color-white: #ffffff;
-  --color-dark: #0f171e;
-  --text-color: #373F49;
-  --link-color: #4479ff;
-  --bg: #ffffff;
-  --backdropBg: 255,255,255;
-  --hr: #eeeeee;
-}
-
 body {
   -webkit-font-smoothing: antialiased;
   font-family: "sf", sans-serif;

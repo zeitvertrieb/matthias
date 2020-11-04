@@ -9,12 +9,16 @@ import ArticlePreview from '../components/article-preview'
 
 const RootIndex = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title
+  const siteDescription = data.site.siteMetadata.description
   const posts = data.allContentfulBlogPost.edges
   const [author] = data.allContentfulPerson.edges
 
   return (
     <Layout>
-      <Helmet title={siteTitle} />
+      <Helmet title={siteTitle}>
+        <html lang="en" />
+        <meta name="description" content={siteDescription} />
+      </Helmet>
       <div className="wrapper">
         <Hero data={author.node} />
         <p>
@@ -46,6 +50,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        description
       }
     }
     allContentfulBlogPost(

@@ -15,7 +15,10 @@ const BlogPostTemplate = ({ data, pageContext }) => {
 
   return (
     <Layout>
-      <Helmet title={`${post.title} – a commentary by ${siteTitle}`} />
+      <Helmet title={`${post.title} – a commentary by ${siteTitle}`}>
+        <html lang="en" />
+        <meta name="description" content={post.description.description} />
+      </Helmet>
       <Link
         to="/blog"
         className={navStyles.navigationButton}
@@ -87,6 +90,9 @@ export const pageQuery = graphql`
         childMarkdownRemark {
           html
         }
+      }
+      description {
+        description
       }
       body {
         childMarkdownRemark {
