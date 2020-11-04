@@ -9,13 +9,13 @@ import navStyles from '../components/navigation.module.css'
 import styles from './blog-post.module.css'
 
 const BlogPostTemplate = ({ data, pageContext }) => {
-  const siteTitle = data.site.siteMetadata
+  const siteTitle = data.site.siteMetadata.title
   const post = data.contentfulBlogPost
   const { previous, next } = pageContext
 
   return (
     <Layout>
-      <Helmet title={`${post.title} | ${siteTitle}`} />
+      <Helmet title={`${post.title} – a commentary by ${siteTitle}`} />
       <Link
         to="/blog"
         className={navStyles.navigationButton}

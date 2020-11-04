@@ -8,14 +8,14 @@ import ResumeEntry from '../components/resume-entry'
 import stylesHero from '../components/hero.module.css'
 
 const ExperienceIndex = ({ data }) => {
-  const title = data.site.siteMetadata
+  const siteTitle = data.site.siteMetadata.title
   const jobs = data.allContentfulResumePost.edges
   const inititatives = data.allContentfulInitiativePost.edges
   const [author] = data.allContentfulPerson.edges
 
   return (
     <Layout>
-      <Helmet title={`Experience – ` + title} />
+      <Helmet title={`Experience – ` + siteTitle} />
       <div className="wrapper">
         <Hero data={author.node} />
       </div>

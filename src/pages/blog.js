@@ -8,12 +8,12 @@ import ArticlePreview from '../components/article-preview'
 import stylesHero from '../components/hero.module.css'
 
 const BlogIndex = ({ data }) => {
-  const title = data.site.siteMetadata
+  const siteTitle = data.site.siteMetadata.title
   const posts = data.allContentfulBlogPost.edges
 
   return (
     <Layout>
-      <Helmet title={`Commentary – ` + title} />
+      <Helmet title={`Commentary – ` + siteTitle} />
       <div className="wrapper">
         <h1 style={{ margin: 0 }}>Commentary</h1>
         <h2 className={stylesHero.heroTitle}>
