@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Matthias Grieder <matthiasgrieder@gmail.com>",
   "bugs": {
-    "url": "https://github.com/zeitvertrieb/matthias.grieder/issues"
+    "url": "https://github.com/zeitvertrieb/matthias/issues"
   },
   "dependencies": {
     "gatsby-image": "^2.3.4",
@@ -34,7 +34,7 @@
   "engines": {
     "node": ">=10.13.0"
   },
-  "homepage": "https://github.com/zeitvertrieb/matthias.grieder#readme",
+  "homepage": "https://github.com/zeitvertrieb/matthias#readme",
   "keywords": [
     "resume",
     "blog",
@@ -48,7 +48,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zeitvertrieb/matthias.grieder.git"
+    "url": "git+https://github.com/zeitvertrieb/matthias.git"
   },
   "scripts": {
     "dev": "npm run develop",

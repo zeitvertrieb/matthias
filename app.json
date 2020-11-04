@@ -9,7 +9,7 @@
     "static",
     "ssg"
   ],
-  "repository": "https://github.com/zeitvertrieb/matthias.grieder/",
+  "repository": "https://github.com/zeitvertrieb/matthias/",
   "success_url": "/",
   "buildpacks": [
     {

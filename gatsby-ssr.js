@@ -7,7 +7,7 @@ import {
   INITIAL_COLOR_MODE_CSS_PROP,
 } from './src/constants';
 
-import Layout from './src/components/layout';
+import App from './src/components/app';
 
 function setColorsByTheme() {
   const colors = '🌈';
@@ -89,5 +89,5 @@ export const onRenderBody = ({ setPreBodyComponents, setPostBodyComponents, setH
 };
 
 export const wrapPageElement = ({ element }) => {
-  return <Layout>{element}</Layout>;
+  return <App>{element}</App>;
 };
