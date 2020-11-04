@@ -16,7 +16,7 @@
 
 .navigationInner {
   position: relative;
-  padding-top: 7em;
+  padding-top: 15vmin;
   padding-bottom: 5vmin;
   width: 100%;
 }
@@ -160,6 +160,7 @@ nav {
 
 .navigationFooter {
   margin-top: 1rem;
+  margin-bottom: 5vmin;
   padding: 0 1rem;
 }
 

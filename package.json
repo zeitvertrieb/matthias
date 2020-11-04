@@ -26,6 +26,7 @@
     "dotenv": "^8.2.0",
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.19.0",
+    "ftp-deploy": "^2.3.8",
     "gatsby": "^2.20.25",
     "gh-pages": "^2.2.0",
     "prettier": "^2.0.4",
@@ -58,9 +59,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md' 'bin/*.js'",
     "build": "gatsby clean && gatsby build",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "deploy": "gatsby clean && gatsby build && node deploy",
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix *.js bin/*.js",
-    "start": "npm run develop",
-    "heroku-postbuild": "gatsby build"
+    "start": "npm run develop"
   }
 }

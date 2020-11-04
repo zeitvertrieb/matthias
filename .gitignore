@@ -57,6 +57,9 @@ typings/
 # dotenv environment variables file
 .env
 
+# ftp deployment
+deploy.js
+
 # build folder
 public
 
