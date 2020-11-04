@@ -25,7 +25,7 @@ if (!spaceId || !accessToken) {
 
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://matthias.grieder.info`,
+    siteUrl: `https://matthias.grieder.info/`,
     title: `Matthias Grieder, Designer`,
     description: `I aim to create best user experience for all my clients and projects.`,
     author: `@zeitvertrieb`,
@@ -36,6 +36,23 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-next-seo`,
+      options: {
+        openGraph: {
+          type: 'website',
+          locale: 'en',
+          url: 'https://matthias.grieder.info/',
+          site_name: 'Matthias Grieder, Designer',
+        },
+        twitter: {
+          handle: '@zeitvertrieb',
+          site: '@zeitvertrieb',
+          cardType: 'summary_large_image',
+        },
+      },
+    },
     {
       resolve: `gatsby-source-contentful`,
       options: contentfulConfig,

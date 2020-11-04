@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import { Helmet } from 'react-helmet'
+import { BlogPostJsonLd } from 'gatsby-plugin-next-seo';
 import Img from 'gatsby-image'
 import Layout from '../components/layout'
 
@@ -19,6 +20,16 @@ const BlogPostTemplate = ({ data, pageContext }) => {
         <html lang="en" />
         <meta name="description" content={post.description.description} />
       </Helmet>
+      <BlogPostJsonLd
+        url={post.slug}
+        title={post.title}
+        images={[
+          post.heroImage.file.url
+        ]}
+        datePublished={post.publishDate}
+        authorName={post.author}
+        description={post.description.description}
+      />
       <Link
         to="/blog"
         className={navStyles.navigationButton}
@@ -80,8 +91,14 @@ export const pageQuery = graphql`
     contentfulBlogPost(slug: { eq: $slug }) {
       title
       tags
+      author {
+        name
+      }
       publishDate(formatString: "MMMM Do, YYYY")
       heroImage {
+        file {
+          url
+        }
         fluid(maxWidth: 1180, background: "rgb:000000") {
           ...GatsbyContentfulFluid_tracedSVG
         }

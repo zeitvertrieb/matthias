@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import { Helmet } from 'react-helmet'
+import { BlogJsonLd } from 'gatsby-plugin-next-seo'
 import get from 'lodash/get'
 import Layout from '../components/layout'
 import ArticlePreview from '../components/article-preview'
@@ -17,6 +18,12 @@ const BlogIndex = ({ data }) => {
         <html lang="en" />
         <meta name="description" content="Commentary on design topics by Matthias." />
       </Helmet>
+      <BlogJsonLd
+        url='https://matthias.grieder.info/blog'
+        headline='Commentary'
+        authorName='Matthias Grieder'
+        description='Commentary on design topics by Matthias.'
+      />
       <div className="wrapper">
         <h1 style={{ margin: 0 }}>Commentary</h1>
         <h2 className={stylesHero.heroTitle}>
