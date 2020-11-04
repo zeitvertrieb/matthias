@@ -41,15 +41,9 @@ const Navigation = () => {
         style={{ right: isShown ? '0' : '' }}
       >
         <div className={styles.navigationInner}>
-          <header className={styles.navigationTitle}>
-            <div>
-              {data.contentfulPerson.name}, {data.contentfulPerson.title}
-            </div>
-            <div>
-              <small>© {new Date().getFullYear()}</small>
-            </div>
+          <div className={styles.navigationTitle}>
             <h3>Navigation</h3>
-          </header>
+          </div>
           <nav role="navigation">
             <ul className={styles.navigation}>
               <li
@@ -97,12 +91,18 @@ const Navigation = () => {
                 <ion-icon
                   size="large"
                   name="logo-linkedin"
-                  style={{ margin: '.3333rem' }}
+                  style={{ margin: '.5rem 0 0' }}
                 />
                 <span className="sr-only">LinkedIn</span>
               </a>
             </li>
           </ul>
+          <footer className={styles.navigationFooter}>
+            <div>
+              {data.contentfulPerson.name}, {data.contentfulPerson.title}
+            </div>
+            <small>© {new Date().getFullYear()}</small>
+          </footer>
         </div>
       </div>
       <div

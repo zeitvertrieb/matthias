@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
+import { InView } from 'react-intersection-observer'
 import { Helmet } from 'react-helmet'
 import get from 'lodash/get'
 import Hero from '../components/hero'

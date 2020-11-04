@@ -158,9 +158,13 @@ nav {
   padding: 0 1rem;
 }
 
+.navigationFooter {
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+
 .navigationItem {
   margin: 0;
-  padding: .3333rem;
   display: inline-flex;
 }
 
