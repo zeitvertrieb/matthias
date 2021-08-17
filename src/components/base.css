@@ -24,14 +24,6 @@ body {
   margin: 0;
 }
 
-/* body.dark {
-  --text-color: rgba(255, 255, 255, 0.88);
-  --link-color: #7aa0ff;
-  --bg: var(--color-dark);
-  --backdropBg: 0,0,0;
-  --hr: #333333;
-} */
-
 img {
   display: block;
   width: 100%;

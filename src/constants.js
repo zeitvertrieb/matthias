@@ -1,15 +1,19 @@
 export const COLORS = {
   text: {
-    light: '#373F49', // white
-    dark: '#ffffff', // near-black
+    light: '#373F49',
+    dark: '#ffffff',
   },
   background: {
-    light: '#ffffff', // white
-    dark: '#0f171e', // navy navy blue
+    light: '#f3f2f0',
+    dark: '#0f171e',
+  },
+  contrast: {
+    light: '#ffffff',
+    dark: '#000000',
   },
   action: {
-    light: '#144ee0', // Pinkish-red
-    dark: '#7aa0ff', // Yellow
+    light: '#144ee0',
+    dark: '#7aa0ff',
   },
   backdrop: {
     light: 'rgb(255 255 255 / 0.4)',
